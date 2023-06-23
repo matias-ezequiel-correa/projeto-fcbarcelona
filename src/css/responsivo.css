@@ -79,6 +79,10 @@
         margin-top: 30px;
     }
 
+    .conteudo-principal-escrito .titulo-principal {
+        font-size: 54px;
+    }
+
     .conteudo .camp-nou-image {
         max-width: 75%;
 
