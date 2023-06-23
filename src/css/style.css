@@ -1,0 +1,151 @@
+body {
+    background: rgb(202,19,46);
+    background: linear-gradient(90deg, rgba(202,19,46,1) 10%, rgba(23,66,131,1) 90%);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    box-shadow: 1px 10px 10px #000000;
+    background-color: #181733;
+}
+
+.cabecalho .logo {
+    height: 85px;
+    text-shadow: 1px 1px 1px black;
+    transition: 0.2s ease-in-out;
+}
+
+.cabecalho .logo:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.conteudo {
+    border-top: 7px solid;
+    border-image: linear-gradient(90deg, rgba(202, 19, 46, 1) 10%, rgba(23, 66, 131, 1) 90%) 1;
+    margin-bottom: 38px;    
+}
+
+.conteudo .conteudo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito .titulo-principal {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    color: #ffffff;
+}
+
+.conteudo-principal-escrito .subtitulo-principal {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #fdc52c;
+}
+
+.conteudo-principal-escrito .botao-principal {
+    background: rgb(23,66,131);
+    background: linear-gradient(0deg, rgba(23,66,131,1) 10%, rgba(202,19,46,1) 90%);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.conteudo-principal-escrito .botao-principal:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.camp-nou-image {
+    height: 300px;
+    margin-top: 85px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.conteudo-secundario .titulo-secundario {
+    border-top: 0.4px solid;
+    border-image: linear-gradient(90deg, rgba(202, 19, 46, 1) 10%, rgba(23, 66, 131, 1) 90%) 1;
+    padding-top: 39px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.conteudo-secundario .texto-secundario {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fdc52c;
+    font-weight: 300;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+
+.conteudo-secundario .texto-secundario:hover {
+    text-decoration: underline;
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.rodape {
+    border-top: 7px solid;
+    border-image: linear-gradient(90deg, rgba(202, 19, 46, 1) 10%, rgba(23, 66, 131, 1) 90%) 1;
+    background-color: #181733;
+    background-size: cover;
+    box-shadow: 10px 1px 10px #000000;
+}
+
+.rodape .rodape-imagem {
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.fundo-video {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-video .video {
+    height: 100vh;
+}
+
+.fundo-video::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%);
+}
